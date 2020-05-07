@@ -5,16 +5,29 @@ using namespace std;
 // declarations
 char square[10] = {'0','1','2','3','4','5','6','7','8','9'};
 void board();
+int checkwin();
 
 int main(){
 
-	// player selector
 	int player = 1;
-	player = (player%2) ? 1:2;
+	int choice;
+	char mark;
 
-	// Draw board
-	board();
+	// game start
+	while (checkwin() == -1){
+		// player selector
+		player = (player%2) ? 1:2;
+		// player mark selector
+		mark = (player == 1) ? 'X':'O';
 
+		// Draw board
+		board();
+		cout << endl;
+		cout << "Player " << player << " enter number" << endl;
+		cin >> choice;
+
+	}
+	
 	return 0;
 }
 
