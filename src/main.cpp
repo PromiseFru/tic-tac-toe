@@ -8,6 +8,10 @@ void board();
 
 int main(){
 
+	// player selector
+	int player = 1;
+	player = (player%2) ? 1:2;
+
 	// Draw board
 	board();
 
