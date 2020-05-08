@@ -65,7 +65,13 @@ int main(){
 		player++;
 
 	}
-	
+	if(checkwin() == 1){
+		player --;
+		cout << "Player " << player << " Wins!" << endl;
+	}
+	if(checkwin() == 0){
+		cout << "Match drawn" << endl;
+	}
 	return 0;
 }
 
