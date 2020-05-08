@@ -26,6 +26,44 @@ int main(){
 		cout << "Player " << player << " enter number" << endl;
 		cin >> choice;
 
+		// write board
+		switch (choice){
+				case 1:
+					square[1] = mark;
+					break;
+				case 2:
+					square[2] = mark;
+					break;
+				case 3:
+					square[3] = mark;
+					break;
+				case 4:
+					square[4] = mark;
+					break;
+				case 5:
+					square[5] = mark;
+					break;
+				case 6:
+					square[6] = mark;
+					break;
+				case 7:
+					square[7] = mark;
+					break;
+				case 8:
+					square[8] = mark;
+					break;
+				case 9:
+					square[9] = mark;
+					break;
+				default:
+					{
+						cout << "Invalid entry" << endl;
+						player--;
+					}
+			}
+
+		player++;
+
 	}
 	
 	return 0;
