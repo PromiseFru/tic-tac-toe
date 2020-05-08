@@ -72,10 +72,12 @@ int main(){
 	if(checkwin() == 0){
 		cout << "Match drawn" << endl;
 	}
+
 	return 0;
 }
 
 void board(){
+	system("clear");
 	cout << "_____ _____ _____" << endl;
 	for(int i=1; i<=9; i+=3){
 		cout << "     |     |     |" << endl;
